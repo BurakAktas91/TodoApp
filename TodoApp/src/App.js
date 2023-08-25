@@ -85,6 +85,7 @@ return (
       onKeyPress={enterBas}
       placeholder="Yeni görevi buraya yazınız..."
     />
+    <div className='ekle-yaz'>
     <Button onClick={ekle} className="button">Ekle</Button>
     <Button
       onClick={() =>
@@ -95,6 +96,7 @@ return (
     >
       Console'a Yaz
     </Button>
+    </div>
     </div>
     <ul className="todo-list">
       {liste.map((item) => (
