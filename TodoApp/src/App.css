@@ -53,21 +53,3 @@
 .button {
   margin-left: 5px;
 }
-
-@media (max-width: 768px) {
-  .container {
-    font-size: 14px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1200px) {
-  .container {
-    font-size: 16px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    font-size: 18px;
-  }
-}
