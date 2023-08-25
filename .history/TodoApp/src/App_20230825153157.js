@@ -10,10 +10,6 @@ function App() {
 const [kutuIci, setKutuIci] = useState('');
 const [liste, setListe] = useState([]);
 
-useEffect(() => {
-  document.title = "Bunları yapmayı unutma 😉";
-}, []);
-
 useEffect (() => {
   const storedList = JSON.parse(localStorage.getItem('liste'));
   if (storedList) {
@@ -61,11 +57,10 @@ function getId() {
   return id;
 }
 
-const enterBas = (event) => {
+const handleKeyPress = (event) => {
   if (event.key === 'Enter') {
     ekle();
   }
-}
 
 return (
   <div className="container">
@@ -82,7 +77,6 @@ return (
       type="text"
       value={kutuIci}
       onChange={change}
-      onKeyPress={enterBas}
       placeholder="Yeni görevi buraya yazınız..."
     />
     <Button onClick={ekle} className="button">Ekle</Button>

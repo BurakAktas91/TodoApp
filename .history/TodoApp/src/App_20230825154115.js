@@ -4,6 +4,7 @@ import { Button } from 'primereact/button';
 import { InputText } from 'primereact/inputtext';
 import 'primeicons/primeicons.css';
 import 'primeflex/primeflex.css';
+import { FaSmile } from 'react-icons/fa';
 
 function App() {
 
@@ -11,7 +12,7 @@ const [kutuIci, setKutuIci] = useState('');
 const [liste, setListe] = useState([]);
 
 useEffect(() => {
-  document.title = "Bunları yapmayı unutma 😉";
+  document.title = "Bunları yapmayı unutma <FaSmile size={30} />";
 }, []);
 
 useEffect (() => {

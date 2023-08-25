@@ -10,10 +10,6 @@ function App() {
 const [kutuIci, setKutuIci] = useState('');
 const [liste, setListe] = useState([]);
 
-useEffect(() => {
-  document.title = "Bunları yapmayı unutma 😉";
-}, []);
-
 useEffect (() => {
   const storedList = JSON.parse(localStorage.getItem('liste'));
   if (storedList) {

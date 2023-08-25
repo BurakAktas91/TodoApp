@@ -4,6 +4,7 @@ import { Button } from 'primereact/button';
 import { InputText } from 'primereact/inputtext';
 import 'primeicons/primeicons.css';
 import 'primeflex/primeflex.css';
+import { FaSmile } from 'react-icons/fa';
 
 function App() {
 
