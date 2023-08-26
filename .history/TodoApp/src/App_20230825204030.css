@@ -1,0 +1,125 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todo-text {
+  flex: 1;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  margin-left: 5px;
+}
+
+@media (max-width: 480px) {
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px; 
+    height: 100vh;
+  }
+
+  .input-container {
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 10px; 
+  }
+
+  .ekle-yaz {
+    display: flex;
+    align-items: center; 
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .todo-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    font-size: 12px;
+  }
+
+  .todo-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .todo-text {
+    flex: 1;
+    margin-bottom: 10px; 
+    text-decoration: none;
+    color: #333;
+  }
+
+  .done {
+    text-decoration: line-through;
+  }
+
+  .button-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    font-size: 12px;
+  }
+
+  .button {
+    margin-left: 5px;
+  }
+
+}

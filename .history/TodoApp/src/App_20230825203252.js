@@ -36,9 +36,8 @@ const ekle = () => {
   }
 }
 
-const sil = (id, text) => {
-  const itemText = text;
-  const onay = window.confirm(`"${itemText}" görevini silmek istediğine emin misin?`);
+const sil = (id) => {
+  const onay = window.confirm('Emin misin?');
   if ( onay ) {
     const guncelListe = liste.filter(item => item.id !== id);
     setListe(guncelListe);    
@@ -118,7 +117,7 @@ return (
               className="button"
             />
             <Button
-              onClick={() => sil(item.id, item.text)}
+              onClick={() => sil(item.id)}
               severity="danger"
               className="button"
             >
